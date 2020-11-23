@@ -4,7 +4,7 @@ entity Blog {
     title String minlength(2) maxlength(100) required
     image ImageBlob
 }
-  
+
 entity Post {
     creationDate Instant required
     publicationDate Instant
@@ -77,7 +77,7 @@ entity Appprofile {
     ethnicGroup EthnicGroup
     studies Studies
     sibblings Integer min(-1) max(20)
-    eyes Eyes 
+    eyes Eyes
     smoker Smoker
     children Children
     futureChildren FutureChildren
@@ -149,7 +149,7 @@ entity Frontpageconfig {
     topNews1 Long
     topNews2 Long
     topNews3 Long
-    topNews4 Long 
+    topNews4 Long
     topNews5 Long
     latestNews1 Long
     latestNews2 Long
@@ -336,7 +336,11 @@ enum ProposalType {
 }
 
 enum ProposalRole {
-    USER, ORGANIZER, MANAGER, ADMIN   
+    USER, ORGANIZER, MANAGER, ADMIN
+}
+
+enum Languages{
+    ENGLISH, GREEK, DEUTSCH, ESPAÑOL, FRANÇAIS, ITALIANO, TÜRKÇE
 }
 
 // RELATIONSHIPS:
